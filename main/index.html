@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <video autoplay loop muted plays-inline class="bg-video">
+            <source src="/resources/main/mhr.mp4" type="video/mp4">
+        </video>
+    <div class="mobile-nav">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="monsters.html">Monster</a>
+            <a href="weapons.html">Weapon</a>
+         </div>
+      
+         <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+            <img src="/resources/main/main.png" class="logo">
+         </div>
+    </div>
+
+        <nav class="pc-nav">
+            <img src="/resources/main/main.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="monsters.html">MONSTERS</a></li>
+                <li><a href="weapons.html">WEAPONS</a></li>       
+            </ul>    
+        </nav>
+        <div class="container">
+            <h1>Welcome to,</h1>
+            <!-- <img src="resources/main.png" alt="MONSTER HUNTER"> -->
+            <h1 class="main">MONSTER HUNTER RISE</h1>
+            <a href="monsters.html">Get Started!</a>
+        </div>
+    </div>
+<script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+</script>
+</body> 
+</html>

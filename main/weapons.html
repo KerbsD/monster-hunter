@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weapons.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <nav>
+            <img src="/resources/main/main.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="monsters.html">MONSTERS</a></li>
+                <li><a href="weapons.html">WEAPONS</a></li>       
+            </ul>           
+        </nav>
+        
+        <h1 class="head">Weapons</h1>
+    </div>
+
+<div class="weapons">
+    <div class="slider">
+        <!-- <button onclick="offSlide()">Stop</button> -->
+        <div class="slides">
+            <input class="stop" type="radio" name="radio-btn" id="radio1">
+            <input class="stop" type="radio" name="radio-btn" id="radio2">
+            <input class="stop" type="radio" name="radio-btn" id="radio3">
+            <input class="stop" type="radio" name="radio-btn" id="radio4">
+            <input class="stop" type="radio" name="radio-btn" id="radio5">
+            <div class="slide first">
+                <h1 class="label">Great Sword</h1>               
+                <img src="/resources/types/gs.png" alt="Great Sword">
+                <div class="modal">
+                    <img src="/resources/wp-icons/gs-icon.png" alt="">
+                    <h1>Great Sword</h1>
+                    <p> Great Sword (大剣 dai ken, "big sword") is one out of the fourteen weapon categories in Monster Hunter Rise (MHR or MHRise). Like all Weapons, it features a unique set of moves and an upgrade path that branches out depending on the materials used.</p>
+                </div>
+             </div>
+             <div class="slide">
+                <h1 class="label">Hammer</h1>
+                <img src="/resources/types/hm.png" alt="Hammer">
+                <div class="modal">
+                    <img src="/resources/wp-icons/hm-icon.png" alt="">
+                    <h1>Hammer</h1>
+                    <p>The Hammer (ハンマー Hanmā) weapon class is a fairly common weapon type able to be used by players since the first Monster Hunter game. Staunch and resilient, the hammer is perhaps the first representative weapon-of-choice to dictate pure, unadulterated damage directly to the target.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <h1 class="label">Long Sword</h1>
+                <img src="/resources/types/ls.png" alt="Long Sword">    
+                <div class="modal">
+                    <img src="/resources/wp-icons/ls-icon.png" alt="">
+                    <h1>Long Sword</h1>
+                    <p>Long Sword (太刀 tachi) is a weapon category in Monster Hunter Rise (MHR). Like all Weapons, it features a unique moveset and an upgrade path that branches out depending on the materials used. Please see Weapon Mechanics for details on the basics of your hunter tools.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <h1 class="label">Dual Blades</h1>
+                <img src="/resources/types/db.png" alt="Long Sword">
+                <div class="modal">
+                    <img src="/resources/wp-icons/db-icon.png" alt="">
+                    <h1>Dual Blades</h1>
+                    <p>Dual Blades (双剣 sou ken, "paired swords") is a weapon category in Monster Hunter World (MHW). Like all Weapons, it features a unique moveset and an upgrade path that branches out depending on the materials used. Please see Weapon Mechanics for details on the basics of your hunter tools.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <h1 class="label">Sword & Shield</h1>
+                <img src="/resources/types/sw.png" alt="Long Sword">
+                <div class="modal">
+                    <img src="/resources/wp-icons/ss-icon.png" alt="">
+                    <h1>Sword & Shield</h1>
+                    <p>Sword & Shield (片手剣 kata te ken "single-handed sword") is one out of the fourteen weapon categories in Monster Hunter Rise (MHR or MHRise). Like all Weapons, it features a unique set of moves and an upgrade path that branches out depending on the materials used.</p>
+                </div>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+           </div>
+        </div>
+
+        
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
+</div>
+<script src="weapon.js"></script>
+</body>
+</html>

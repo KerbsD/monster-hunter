@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400px;
+    font-style: normal; 
+  
+}
+
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(73, 28, 13, 0.3), rgba(73, 28, 13, 0.3)  );
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px, 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    /* width: 200px; */
+    height: 80px;
+    margin: 15px;
+}
+
+nav ul li{
+    font-size: 25px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    height: auto;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.88);
+    padding: 9px;
+}
+
+nav ul li a:hover{
+    color: rgb(244, 160, 50);
+    background-color: rgba(150, 66, 13);
+    border-radius: 15px;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    font-size: 60px;
+    color: rgba(240, 248, 255, 0.88);
+}
+
+.container .main{
+    font-size: 150px;
+    color:  rgb(212,175,55);
+    margin: 40px 10px;
+    outline-color: rgb(0, 0, 0);
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.661);
+}
+
+/* .container img{
+    height: 550px;
+} */
+
+.container a{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgba(241, 219, 205, 0.898);
+    background-color: rgb(94, 38, 9);
+    padding: 7px 17px;
+    border-radius: 20px;
+    border: 2px solid rgb(221, 130, 12);
+    transition-duration: 900ms;
+}
+
+.container a:hover{
+    background-color: rgb(231, 92, 23);
+    color: rgba(0, 0, 0, 0.994);
+    border: 2px solid rgb(255, 145, 2);
+}
+
+.bg-video{
+    position: absolute;
+    z-index: -1; 
+}
+
+
+@media (min-aspect-ratio: 16/9){    
+    .bg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bg-video{
+        width: auto;
+        height: 100%;   
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+    .container .main{
+        font-size: 80px;
+        color:  rgb(212,175,55);
+        outline-color: rgb(0, 0, 0);
+        -webkit-text-stroke: 3px rgba(0, 0, 0, 0.661);
+    }
+
+    .container h1{
+        font-size: 30px;
+        color: rgba(240, 248, 255, 0.88);
+    }
+    
+    .container a{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgba(241, 219, 205, 0.898);
+        background-color: rgb(94, 38, 9);
+        padding: 7px 17px;
+        border-radius: 20px;
+        border: 2px solid rgb(221, 130, 12);
+        transition-duration: 900ms;
+    }
+    
+    .container a:hover{
+        background-color: rgb(231, 92, 23);
+        color: rgba(0, 0, 0, 0.994);
+        border: 2px solid rgb(255, 145, 2);
+    }
+
+   .pc-nav{
+    display: none;
+   }
+
+   .mobile-nav{
+    display: block;
+   }
+
+   .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(73, 28, 13, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 20px 8px 15px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f6efef;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #5a4949;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(178, 93, 32, 0.88);
+    color: rgb(221, 194, 171);
+    padding: 5px 12px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #452707;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  #main .logo{
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    right: 4px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+}
+  
